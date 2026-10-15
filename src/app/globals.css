@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  font-family: "Segoe UI", "Tahoma", "Noto Sans Arabic", "Arial", system-ui, sans-serif;
+}
+
+body {
+  background-image: radial-gradient(circle at 15% -10%, rgba(56, 189, 248, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(167, 139, 250, 0.1), transparent 40%);
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+
+table tbody tr:hover {
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
