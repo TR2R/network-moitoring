@@ -17,9 +17,6 @@ export const pool =
   globalForDb.__arenaNextJsPostgresqlPool ??
   new Pool({
     connectionString: databaseUrl,
-    ssl: {
-      rejectUnauthorized: false, // مخصص لضمان قبول شهادة أمان Neon ومنع تعليق الاتصال
-    },
   });
 
 if (process.env.NODE_ENV !== "production") {
